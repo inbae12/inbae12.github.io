@@ -7,4 +7,5 @@ urlpatterns = [
     path('', blog.views.mustard, name='mustard'),
     path('/myac', blog.views.myac, name='myac'),
     path('/write', blog.views.write, name='write'),
+    ath('/bootstrapprac', blog.views.bootstrapprac, name='bootstrapprac'),
 ]

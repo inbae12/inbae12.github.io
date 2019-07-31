@@ -11,3 +11,6 @@ def myac(request):
 
 def write(request):
     return render(request, 'write.html')
+
+def bootstrapprac(request):
+    return render(request, 'bootstrapprac.html')
