@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>jquery</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-image: url("mgsrc.jpg");
+    }
+
+    ul {
+      list-style-type: none;
+      display: block;
+    }
+
+    #menu li {
+      float: left;
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: inherit;
+    }
+
+    #container {
+      margin: auto;
+      height: auto;
+      padding: 0px;
+      width: 1500px;
+      background-color: white;
+    }
+
+    #top {
+      display: block;
+      width: 1500px;
+      height: 50px;
+    }
+
+    #topleft {
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      color: #FE9A2E;
+      font-size: 20px;
+      margin-left: 30px;
+    }
+
+    #topright {
+      float: right;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      color: #FE9A2E;
+      font-size: 20px;
+      margin-right: 30px;
+
+    }
+
+    #header {
+      width: 1500px;
+      height: 200px;
+      display: block;
+      text-align: center;
+      line-height: 200px;
+      vertical-align: middle;
+      background-color: #FE9A2E;
+      color: #FFFF00;
+      font-size: 100px;
+    }
+
+    #menutext {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    #menu {
+      display: inline-block;
+    }
+
+    #menu .submenu {
+      display: none;
+      position: absolute
+    }
+
+    #menu ul li:hover ul {
+      display: block;
+      border: 1px solid #bcbcbc;
+
+    }
+
+    #menu .submenu li {
+      display: inline;
+      float: none;
+    }
+
+    #menu .submenu a {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 17px;
+      display: block;
+      color: #FE9A2E;
+      font-size: 20px;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    #menu ul {
+      padding: 0px;
+    }
+
+    #menu a {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 35px;
+      display: block;
+      color: #FE9A2E;
+      font-size: 22px;
+    }
+
+    #menu a:hover {
+      background-color: #FE9A2E;
+      color: white;
+    }
+
+    #main {
+      width: 1094px;
+      border: 3px solid #FE9A2E;
+      padding: 50px 180px;
+      margin: auto;
+    }
+
+    #footer {
+      width: 1500px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(function() {
+      $("#header").on("click", function() {
+        $("#header").css("fontSize", "30px").css("background-color", "black")
+          .css("color", "white").html("It's black")
+        $("#main").css("background-color", "#1C1C1C").css("color", "white")
+        $("#top").css("background-color", "#1C1C1C")
+        $("#menutext").css("background-color", "#1C1C1C")
+        $("#container").css("background-color", "#1C1C1C").css("color", "white")
+        $("#footer").css("background-color", "#1C1C1C").css("color", "white").html("Practice Jquery")
+      });
+      $("#slidedown").on("click", function() {
+        $("#header").slideDown();
+      });
+      $("#slideup").on("click", function() {
+        $("#header").slideUp();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="top">
+      <div id="topleft">
+        <a href="mustard.html">GTLOGO</a>
+      </div>
+      <div id="topright">
+        <a href="write.html">Write</a>
+      </div>
+    </div>
+
+    <div id="header">
+      Click Me
+    </div>
+
+    <div id="menutext">
+      <div id="menu">
+        <ul>
+          <li><a href="write.html">Write</a></li>
+          <li><a href="#">Search</a>
+            <ul class="submenu">
+              <li><a href="bootstrapprac.html">bbt</a></li>
+              <li><a href="#">Sub Menu 2</a></li>
+              <li><a href="#">Sub Menu 3</a></li>
+            </ul>
+          </li>
+          <li><a href="myac.html">MyAc</a></li>
+
+          <li><a href="#">Contact</a>
+            <ul class="submenu">
+              <li><a href="#">Sub Menu 1</a></li>
+              <li><a href="#">Sub Menu 2</a></li>
+              <li><a href="#">Sub Menu 3</a></li>
+            </ul>
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div id="main">
+      <button id="slidedown">slidedown</button>
+      <button id="slideup">slideup</button>
+    </div>
+
+    <div id="footer">
+      GIRIBOY IS ARTIST
+    </div>
+  </div>
+
+</body>
+
+
+<script src="jsprac.js"> </script>
+
+</html>

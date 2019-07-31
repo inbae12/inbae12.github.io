@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MUMUSTARD</title>
+    <style>
+      body{
+        margin:0px;
+        padding:0px;
+        background-image:url("mgsrc.jpg");
+      }
+      ul{
+        list-style-type:none;
+        display:block;
+      }
+      #menu li{
+        float:left;
+        display:inline-block;
+      }
+      a{
+        text-decoration:none;
+      }
+      a:visited{
+        color:inherit;
+      }
+      #container{
+        margin:auto;
+        height:auto;
+        padding:0px;
+        width:1500px;
+        background-color:white;
+      }
+      #top{
+        display:block;
+        width:1500px;
+        height:50px;
+      }
+      #topleft{
+        float:left;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+        vertical-align:middle;
+        color:#FE9A2E;
+        font-size:20px;
+        margin-left:30px;
+      }
+      #topright{
+        float:right;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+        vertical-align:middle;
+        color:#FE9A2E;
+        font-size:20px;
+        margin-right:30px;
+
+      }
+      #header{
+        width:1500px;
+        height:200px;
+        display:block;
+        text-align:center;
+        line-height:200px;
+        vertical-align:middle;
+        background-color:#FE9A2E;
+        color:#FFFF00;
+        font-size:100px;
+      }
+      #menutext{
+        text-align:center;
+        margin-bottom:50px;
+      }
+      #menu{
+        display:inline-block;
+      }
+      #menu .submenu {
+        display:none;
+        position:absolute
+      }
+      #menu ul li:hover ul {
+    	display:block;
+      border:1px solid #bcbcbc;
+      }
+      #menu .submenu li {
+      display:inline;
+      float:none;
+      }
+      #menu .submenu a{
+        height:40px;
+        line-height:40px;
+        padding:0 17px;
+        display:block;
+        color:#FE9A2E;
+        font-size:20px;
+        background-color:white;
+        overflow:hidden;
+      }
+      #menu ul{
+        padding:0px;
+      }
+      #menu a{
+        height:50px;
+        line-height:50px;
+        padding:0 35px;
+        display:block;
+        color:#FE9A2E;
+        font-size:22px;
+      }
+      #menu a:hover{
+        background-color:#FE9A2E;
+        color:white;
+      }
+      #main{
+        width:1094px;
+        border:3px solid #FE9A2E;
+        padding:50px 180px;
+        margin:auto;
+      }
+      #footer{
+        width:1500px;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+        vertical-align:middle;
+      }
+
+      </style>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+
+  <body>
+<div id ="container">
+  <div id = "top">
+    <div id = "topleft">
+    <a href="#">GTLOGO</a>
+    </div>
+    <div id ="topright">
+      <a href = "write.html">Write</a>
+      </div>
+    </div>
+
+    <div id = "header">
+      MUSTARD
+      </div>
+
+<div id = "menutext">
+      <div id = "menu">
+        <ul>
+          <li><a href = "{%url 'write' %}">Write</a></li>
+          <li><a href = "#">Search</a>
+            <ul class="submenu">
+  <li><a href="bootstrapprac.html">bbt 1</a></li>
+  <li><a href="#">Sub Menu 2</a></li>
+  <li><a href="#">Sub Menu 3</a></li>
+  </ul></li>
+          <li><a href = "{%url 'myac' %}">MyAc</a></li>
+
+          <li><a href = "#">Contact</a>
+            <ul class="submenu">
+  <li><a href="#">Sub Menu 1</a></li>
+  <li><a href="#">Sub Menu 2</a></li>
+  <li><a href="#">Sub Menu 3</a></li>
+  </ul>
+
+</li>
+
+          </ul>
+        </div>
+</div>
+
+        <div id = "main">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices, dui sed elementum pulvinar, est orci pharetra mi, quis vulputate tellus massa ac lectus. Mauris egestas nisi quis iaculis tincidunt. Sed commodo tellus sed varius pharetra. Maecenas aliquet velit nisl, eu posuere quam semper vel. Cras vehicula, risus vel facilisis venenatis, velit felis placerat nisi, id posuere est leo sed urna. Quisque nibh dolor, ornare at dui ac, finibus pretium dui. Suspendisse eleifend, eros a sollicitudin maximus, eros tortor aliquam metus, a ultrices magna risus nec est. In ornare tellus sit amet pharetra lacinia. Phasellus blandit varius pulvinar. Sed venenatis metus in placerat elementum. Etiam non gravida nisi. Nullam molestie sapien eu ex interdum luctus. Quisque ac dolor metus.
+
+Nullam sodales turpis a odio tempor, quis consectetur nibh lobortis. Donec et elementum justo. In varius purus at pellentesque porta. Nunc ut metus sit amet sem pulvinar venenatis. Donec maximus ut tortor quis elementum. Nullam scelerisque ante neque, gravida mollis leo hendrerit a. Donec lorem lacus, ornare nec neque et, vulputate commodo urna. Pellentesque mollis, nisl nec consequat convallis, augue velit mattis odio, sit amet ullamcorper lacus orci ac orci. Vivamus pulvinar interdum enim, et euismod dui maximus at. Praesent convallis et augue nec efficitur. Suspendisse elementum orci arcu, id convallis quam cursus id. Quisque semper laoreet turpis sit amet accumsan. Donec dictum consequat arcu, et accumsan leo varius nec.
+
+Ut nec velit id enim tincidunt pellentesque vel et quam. Donec id justo sed sapien venenatis vulputate. Sed porttitor eu tortor vel placerat. Vivamus congue metus consectetur tincidunt faucibus. Nam convallis in eros id porta. Proin a diam ultrices, dapibus tellus eget, dignissim sem. Ut in ligula neque. Mauris dui ex, imperdiet eu orci eget, feugiat tincidunt lacus. Sed quis felis maximus, tincidunt odio nec, semper ipsum. In neque neque, semper id ligula ut, pulvinar dictum ex. Integer rhoncus sagittis leo sit amet consectetur. Aenean a rhoncus diam.
+
+Mauris et nulla porta, tincidunt tellus vestibulum, dictum dui. Donec scelerisque elementum eleifend. Mauris bibendum ultricies lorem sed aliquet. Praesent auctor condimentum ex id congue. Phasellus eleifend ligula eget velit tincidunt, sed mattis neque rhoncus. Nam bibendum vitae mi et faucibus. Vivamus quis massa at nibh pulvinar iaculis vitae a lectus. Etiam scelerisque erat turpis. Proin vel ante id nibh fringilla pharetra sit amet eu dui. Phasellus arcu turpis, aliquet et enim et, sodales ultricies purus. Etiam placerat malesuada dui, sit amet viverra ex faucibus vel. Donec laoreet, dui et convallis lobortis, turpis ipsum mollis mauris, ut consectetur magna orci nec purus.
+
+
+          </div>
+
+          <div id = "footer">
+            깃헙에 의해 변경되었다
+            <input type="button" id="hw" value="Hello world" />
+            </div>
+  </div>
+
+  </body>
+
+
+  <script src="jsprac.js"> </script>
+
+</html>

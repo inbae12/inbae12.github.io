@@ -4,5 +4,7 @@ import blog.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', blog.views.index, name='index'),
+    path('', blog.views.mustard, name='mustard'),
+    path('/myac', blog.views.myac, name='myac'),
+    path('/write', blog.views.write, name='write'),
 ]
